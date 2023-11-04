@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title> Sabibleti </title>
+        <link rel="stylesheet" href="./Css/style.css"/>
+        <link rel="stylesheet" href="./Css/quiz.css"/>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+            
+            <li> <a href="./home.html"> Home </a> </li>
+            <li><a href="./quiz.html"> Quizzes </a> </li>
+            <li> <a href="./movies.html"> Barbie reviews</a> </li>
+            <li> <a href="./about.html"> About us </a> </li>
+            
+            </ul>
+        </nav>
+
+        <header class="firstquiz-header">
+
+            <h1>what your favorite barbie movie says about you</h1>
+
+        </header>
+
+        <article>
+            <h2 id="movie">Choose your favorite barbie movie</h2>
+            <div class="container">
+             <div class="choice"> <img src="./images/pauper.jpg" onclick="barbie(1)" id="image"> </div>
+             <div class="choice"> <img src="./images/musketeers.jpg" onclick="barbie(2)" id="image">  </div>
+            <div class="choice"> <img src="./images/swanlake.jpg" onclick="barbie(3)" id="image"> </div>
+           <div class="choice"> <img src="./images/dancing.jpg" onclick="barbie(4)" id="image"> </div>
+            <div class="choice"> <img src="./images/tinkerbell.jpg" onclick="barbie(5)" id="image"> </div>
+           
+            </div>
+            <p id="daxasiateba"></p>
+           
+
+            <script type="text/javascript">
+                var List=[];
+                List[0] = "Extremely imaginative and a big dreamer, you have huge goals and high ambitions. While you may have your head up in the clouds, you have a determined and hardworking personality. You wll work and put in the effort to achieve what you want, but that may mean sacrificing some self-care time. Just remember that it is alright to slow down and take a breather. ";
+                List[1] = "You like to follow tradition and are one to enjoy consistency. Familiarity is comforting to you, and you know what you like. You are also strong-willed and have a protectiveness for your friends and family. Although you may be seen as the parent friend, you secretly have a childish side that needs to be let out more often.";
+                List[2] = "You are full of talent and are skilled in many areas but prefer to not draw attention to them. If someone compliments you, you are likely to get flustered and may deny it. You are humble and lack some self-confidence, but that is due to your slightly shy and timid nature. Try to learn to accept praise, as you deserve every last bit of it.";
+                List[3] = "Always on the move and doing something, you are a busy person with an adventurous spirit. You most likely can not stay in one spot for too long and have tons of hobbies to keep you from getting bored. You are also a social butterfly and get along with nearly everyone that comes in contact with you. You have a personality that meshes well with everyone!";
+                List[4] = "This is not a barbie movie. If you can not tell a difference between barbie and tinkerbell , you are not welcomed here. GET LOST!";
+                
+                function barbie(I){
+                    document.getElementById("daxasiateba").innerHTML = List[I-1];
+        
+                }
+            </script>
+
+
+        </article>
+
+        <footer>
+
+            <h3> &copy Sabibleti. 2023. All Rights Reserved </h3>
+    
+        </footer>
+        
+
+    </body>
+
+    
+
+</html>
