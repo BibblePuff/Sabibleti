@@ -2,6 +2,7 @@
 <html>
 
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <title> Sabibleti </title>
         <link rel="stylesheet" href="./Css/style.css"/>
@@ -9,24 +10,30 @@
     </head>
 
     <body>
-        <nav>
-            <ul>
-            
+        
+        <div class="nav-bar">
+
+            <P id="logo">Bibble<span id="span-logo">land</span></P>
+
             <li> <a href="./home.html"> Home </a> </li>
             <li><a href="./quiz.html"> Quizzes </a> </li>
             <li> <a href="./movies.html"> Barbie reviews</a> </li>
             <li> <a href="./about.html"> About us </a> </li>
             
-            </ul>
-        </nav>
+         </div>
+        
 
-        <header class="firstquiz-header">
-
-            <h1>what your favorite barbie movie says about you</h1>
-
-        </header>
+        
 
         <article>
+            <div class="first-quiz-flex">
+            <header class="firstquiz-header">
+
+                <h1>what your favorite barbie movie says about you</h1>
+    
+            </header>
+            <p id="take-quiz">Each Barbie movie represents unique traits and themes, offering insights into your preferences, strengths, and the magical elements that resonate with you. Discovering your Barbie movie persona is not just fun - it's an opportunity to embrace the magic within and celebrate the special qualities that make you extraordinary.</p>
+
             <h2 id="movie">Choose your favorite barbie movie</h2>
             <div class="container">
              <div class="choice"> <img src="./images/pauper.jpg" onclick="barbie(1)" id="image"> </div>
@@ -34,26 +41,29 @@
             <div class="choice"> <img src="./images/swanlake.jpg" onclick="barbie(3)" id="image"> </div>
            <div class="choice"> <img src="./images/dancing.jpg" onclick="barbie(4)" id="image"> </div>
             <div class="choice"> <img src="./images/tinkerbell.jpg" onclick="barbie(5)" id="image"> </div>
-           
-            </div>
+            <div class="choice"> <img src="./images/secret.jpg" onclick="barbie(6)" id="image"> </div>
+            <div class="choice"> <img src="./images/fairytopia1.jpg" onclick="barbie(7)" id="image"> </div>
             <p id="daxasiateba"></p>
+            </div>
+            
            
 
             <script type="text/javascript">
                 var List=[];
-                List[0] = "Extremely imaginative and a big dreamer, you have huge goals and high ambitions. While you may have your head up in the clouds, you have a determined and hardworking personality. You wll work and put in the effort to achieve what you want, but that may mean sacrificing some self-care time. Just remember that it is alright to slow down and take a breather. ";
-                List[1] = "You like to follow tradition and are one to enjoy consistency. Familiarity is comforting to you, and you know what you like. You are also strong-willed and have a protectiveness for your friends and family. Although you may be seen as the parent friend, you secretly have a childish side that needs to be let out more often.";
-                List[2] = "You are full of talent and are skilled in many areas but prefer to not draw attention to them. If someone compliments you, you are likely to get flustered and may deny it. You are humble and lack some self-confidence, but that is due to your slightly shy and timid nature. Try to learn to accept praise, as you deserve every last bit of it.";
-                List[3] = "Always on the move and doing something, you are a busy person with an adventurous spirit. You most likely can not stay in one spot for too long and have tons of hobbies to keep you from getting bored. You are also a social butterfly and get along with nearly everyone that comes in contact with you. You have a personality that meshes well with everyone!";
-                List[4] = "This is not a barbie movie. If you can not tell a difference between barbie and tinkerbell , you are not welcomed here. GET LOST!";
-                
+                List[0] = "Choosing Barbie as The Princess and the Pauper reveals a personality that appreciates themes of resilience, friendship, and the power of identity. Much like the dual roles in this classic tale, you understand the importance of staying true to yourself and embracing the unique qualities that make you extraordinary. Get ready to embark on a journey of self-discovery and celebrate the richness of your own story! 👸👭🌟";
+                List[1] = " By choosing Barbie and the Three Musketeers,you embody the spirit of adventure, courage, and camaraderie. Much like Barbie and her musketeer friends, your personality thrives on facing challenges with determination and embracing the thrill of exciting journeys. Get ready to wield your imaginary sword and embark on daring escapades! 🏰💫🤺";
+                List[2] = "By selecting Barbie of Swan Lake, you embody a persona filled with enchantment, elegance, and a love for the magical. Much like the timeless tale of Swan Lake, your spirit appreciates the beauty found in the ethereal and the transformative power of love. Get ready to glide through life with grace and embrace the magic that surrounds you!🦢✨";
+                List[3] = "By choosing this enchanting movie, you reveal a personality that cherishes elegance, enchantment, and the joy of dancing. Similar to Princess Genevieve and her sisters, you exude grace and appreciate the beauty found in the art of dance. Get ready to twirl through life with style and embrace the magic of each step!🩰🌟";
+                List[4] = "This is not a barbie movie. If you can not tell a difference between barbie and tinkerbell , you are not welcomed here. GET LOST!🙅‍♀️🚫";
+                List[5] = "By choosing Barbie: A Fairy Secret, you reveal a personality that appreciates the magic of hidden worlds and the excitement of uncovering secrets. Just like Barbie in this movie, you embrace the enchanting and the extraordinary. Get ready to spread your wings and explore the wonders of your own fairy secret with style and grace!🧚‍♀️💖";
+                List[6] = "Choosing Barbie Fairytopia unveils a personality filled with a love for enchanting realms and magical adventures. Much like Elina, you likely appreciate the wonders of nature and the power of believing in magic. Get ready to spread your wings, embrace the fairy within you, and embark on a journey of whimsy and wonder!🌺🧚‍♀️✨";
                 function barbie(I){
                     document.getElementById("daxasiateba").innerHTML = List[I-1];
         
                 }
             </script>
-
-
+             </div>
+             
         </article>
 
         <footer>
